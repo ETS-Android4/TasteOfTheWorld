@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.finalproject.tasteoftheworld">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".BeaverTail"
+            android:parentActivityName=".CanadaRecipies">
+        </activity>
+        <activity
+            android:name=".ButterTart"
+            android:parentActivityName=".CanadaRecipies" />
+        <activity
+            android:name=".Poutine"
+            android:parentActivityName=".CanadaRecipies" />
+        <activity
+            android:name=".MisoSoup"
+            android:parentActivityName=".JapanRecipies" />
+        <activity
+            android:name=".ShrimpFriedRice"
+            android:parentActivityName=".JapanRecipies" />
+        <activity
+            android:name=".TempuraIceCream"
+            android:parentActivityName=".JapanRecipies" />
+        <activity
+            android:name=".Fish"
+            android:parentActivityName=".GuyanaRecipes" />
+        <activity
+            android:name=".Pepper"
+            android:parentActivityName=".GuyanaRecipes" />
+        <activity
+            android:name=".Chicken"
+            android:parentActivityName=".GuyanaRecipes" />
+        <activity
+            android:name=".TortillaSoup"
+            android:parentActivityName=".MexicoRecipes" />
+        <activity
+            android:name=".Beans"
+            android:parentActivityName=".MexicoRecipes" />
+        <activity
+            android:name=".Chile"
+            android:parentActivityName=".MexicoRecipes" />
+        <activity
+            android:name=".GuyanaRecipes"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MexicoRecipes"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".JapanRecipies"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CanadaRecipies"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

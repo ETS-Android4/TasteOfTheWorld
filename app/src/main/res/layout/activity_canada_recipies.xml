@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CanadaRecipies">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/poutine"
+        android:textSize="25sp"
+        android:onClick="onClickPoutine"
+        app:layout_constraintBottom_toTopOf="@+id/PoutineImage"
+        android:id="@+id/dish_Two"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beaver_tail"
+        android:textSize="25sp"
+        android:onClick="onClickBeaverTail"
+        app:layout_constraintBottom_toTopOf="@+id/BeaverTailImage"
+        android:id="@+id/dish_Three"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/butter_tart"
+        android:onClick="onClickButterTart"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/ButterTartImage"
+        android:id="@+id/dish_Four"
+        />
+
+    <ImageView
+        android:id="@+id/ButterTartImage"
+        android:layout_width="411dp"
+        android:layout_height="132dp"
+
+        android:src="@drawable/buttertart"
+        app:layout_constraintBottom_toTopOf="@id/dish_Three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/BeaverTailImage"
+        android:layout_width="416dp"
+        android:layout_height="150dp"
+
+        android:src="@drawable/beavertail"
+        app:layout_constraintBottom_toTopOf="@id/dish_Two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/PoutineImage"
+        android:layout_width="416dp"
+        android:layout_height="146dp"
+        android:src="@drawable/poutine"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

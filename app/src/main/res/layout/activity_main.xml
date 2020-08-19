@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/canada"
+        android:id="@+id/canada_button"
+        android:onClick="onClickCanada"
+        android:contentDescription="@string/canadarecipies" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/canada_button"
+        android:src="@drawable/japan"
+        android:id="@+id/japan_button"
+        android:onClick="onClickJapan"
+        android:contentDescription="@string/japanrecipies" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/japan_button"
+        android:src="@drawable/mexico"
+        android:id="@+id/mexico_button"
+        android:onClick="onClickMexico"
+        android:contentDescription="@string/mexicorecipies" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/mexico_button"
+        android:src="@drawable/guyana"
+        android:id="@+id/guyana_button"
+        android:onClick="onClickGuyana"
+        android:contentDescription="@string/guyanarecipies" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MexicoRecipes">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enfrijoladas_bean_fold_tortilla"
+        android:textSize="25sp"
+        android:onClick="onClickBeans"
+        app:layout_constraintBottom_toTopOf="@+id/beans"
+        android:id="@+id/dish_Two"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sopa_de_tortilla_tortilla_soup"
+        android:textSize="25sp"
+        android:onClick="onClickSoup"
+        app:layout_constraintBottom_toTopOf="@+id/soup"
+        android:id="@+id/dish_Three"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chile_en_nogada"
+        android:onClick="onClickChile"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/chile_Image"
+        android:id="@+id/dish_Four"
+        />
+
+    <ImageView
+        android:id="@+id/chile_Image"
+        android:layout_width="411dp"
+        android:layout_height="132dp"
+
+        android:src="@drawable/chile"
+        app:layout_constraintBottom_toTopOf="@id/dish_Three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/soup"
+        android:layout_width="411dp"
+        android:layout_height="132dp"
+
+        android:src="@drawable/soup"
+        app:layout_constraintBottom_toTopOf="@id/dish_Two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/beans"
+        android:layout_width="410dp"
+        android:layout_height="119dp"
+        android:src="@drawable/beans"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
