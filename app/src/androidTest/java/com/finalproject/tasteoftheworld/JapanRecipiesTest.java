@@ -1,7 +1,6 @@
 package com.finalproject.tasteoftheworld;
 
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.test.rule.ActivityTestRule;
 
@@ -13,12 +12,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class CanadaRecipiesTest {
+public class JapanRecipiesTest {
 
     @Rule
-    public ActivityTestRule<CanadaRecipies> mytestRule = new ActivityTestRule<>(CanadaRecipies.class);
+    public ActivityTestRule<JapanRecipies> mytestRule = new ActivityTestRule<>(JapanRecipies.class);
 
-    private CanadaRecipies mActivity = null;
+    private JapanRecipies mActivity = null;
 
     @Before
     public void setUp() throws Exception {
@@ -29,25 +28,25 @@ public class CanadaRecipiesTest {
     public void testLaunch() {
         //**************************Will be adding image test later on***************************
 
-        //Butter Tart Button test
-       Button dish1 = mActivity.findViewById(R.id.dish_Four);
-       Assert.assertNotNull(dish1);
-       Assert.assertEquals("Butter Tart",dish1.getText().toString());
+        //Ice cream Button test
+        Button dish1 = mActivity.findViewById(R.id.dish_Four);
+        Assert.assertNotNull(dish1);
+        Assert.assertEquals("Tempura \nIce Cream",dish1.getText().toString());
 
-       //Beaver Tail Button test
+        //Miso Soup Button test
         Button dish2 = mActivity.findViewById(R.id.dish_Three);
         Assert.assertNotNull(dish2);
-        Assert.assertEquals("Beaver Tail", dish2.getText().toString());
+        Assert.assertEquals("Miso Soup", dish2.getText().toString());
 
-        //Poutine Button test
+        //Fried Rice Button test
         Button dish3 = mActivity.findViewById(R.id.dish_Two);
         Assert.assertNotNull(dish3);
-        Assert.assertEquals("Poutine",dish3.getText().toString());
+        Assert.assertEquals("Fried Rice \nw/ Shrimp",dish3.getText().toString());
     }
 
     @After
     public void tearDown() throws Exception {
-
         mActivity = null;
     }
+
 }
