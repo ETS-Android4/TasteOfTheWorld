@@ -1,4 +1,4 @@
-# FinalProject4427
+# TasteOfTheWorld
 Source Code for TasteOfTheWorld Android App
 This is an application made on Android Studio and coded in JAVA.
 
